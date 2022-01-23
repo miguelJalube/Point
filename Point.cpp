@@ -26,12 +26,10 @@ unsigned Point::next = 1;
 // 					            Constructeurs
 //***************************************************************
 
-// Avec paramètres
 Point::Point               (const Point& c) : ID(next++){
    x = c.x;
    y = c.y;
    ++number;
-   cout << "Contructeur avec plusieurs paramètre" << endl;
 }
 
 //***************************************************************
@@ -88,7 +86,6 @@ Point&   Point::operator-=  (const Point& p){
 Point&   Point::operator=  (const Point& p){
    x = p.x;
    y = p.y;
-   cout << "Operateur d'affectation" << endl;
    return *this;
 }
 

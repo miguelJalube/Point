@@ -31,25 +31,21 @@ public:
    // Contructeur sans paramètres
    Point    () :  x(0), y(0), ID(next++){
       ++number;
-      std::cout << "Contructeur sans paramètres" << std::endl;
    };
 
    // Destructeur
    ~Point   (){
       --number;
-      std::cout << "Destructeur" << std::endl;
    };
 
    // Contructeur avec paramètres
    Point    (double x, double y) : x(x), y(y), ID(next++){
       ++number;
-      std::cout << "Contructeur avec paramètres" << std::endl;
    };
 
    // Contructeur avec 1 paramètre
    Point    (double x) : x(x), y(x), ID(next++){
       ++number;
-      std::cout << "Contructeur avec 1 paramètre" << std::endl;
    };
 
    // Contructeur de copie
