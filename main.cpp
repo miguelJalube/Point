@@ -66,7 +66,6 @@ int main() {
    Utilities::bufferClear();
 
    cout << endl;
-   ++vp[7];
    for(Point& p : vp){
       test(p);
    }
@@ -96,6 +95,16 @@ int main() {
    cout << "vp[" << ( *( find_if( vp.begin(), vp.end(), HasCoordinate(coord) ) ) )
    .getID()-1
    << "]" << endl;
+
+   cout << endl;
+   cout << "******************************************************" << endl;
+   cout << "*     Test d'un operateur d'affectation" << endl;
+   cout << "******************************************************" << endl;
+   cout << endl;
+   vp[9] = vp[0];
+   cout << "vp[9] apres copie de vp[0] :" << vp[9] << endl;
+
+
 
 	cout << "Pressez Enter pour quitter";
    Utilities::bufferClear();
