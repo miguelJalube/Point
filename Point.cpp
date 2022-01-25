@@ -26,12 +26,12 @@ unsigned Point::next = 1;
 // 					            Constructeurs
 //***************************************************************
 
-// Avec paramètres
+// Avec parametres
 Point::Point               (const Point& c) : ID(next++){
    x = c.x;
    y = c.y;
    ++number;
-   cout << "Contructeur avec plusieurs paramètre" << endl;
+   cout << "Contructeur avec plusieurs parametre" << endl;
 }
 
 //***************************************************************

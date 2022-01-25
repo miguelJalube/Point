@@ -100,6 +100,8 @@ int main() {
 	cout << "Pressez Enter pour quitter";
    Utilities::bufferClear();
 
+
+
 	return EXIT_SUCCESS;
 }
 
